@@ -5,14 +5,14 @@ metadata:
   namespace: argocd
 spec:
   description: ArgoCD Plant Project
-sourceRepos:
-- https://github.com/Devops-IAC-Org/k8s-practice
-destinations:
-- server: https://kubernetes.default.svc
-  namespace: dev-team-a
-namespaceResourceWhitelist:
-- group: '*'
-  kind: '*'
-clusterResourceBlacklist:
-- group: '*'
-  kind: '*'
+  sourceRepos:
+  - https://github.com/Devops-IAC-Org/k8s-practice
+  destinations:
+  - server: https://kubernetes.default.svc
+    namespace: dev-team-a
+  namespaceResourceWhitelist:
+  - group: '*'
+    kind: '*'
+  clusterResourceBlacklist:
+  - group: '*'
+    kind: '*'
