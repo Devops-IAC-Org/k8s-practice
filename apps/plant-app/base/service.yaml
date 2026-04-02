@@ -1,1 +1,12 @@
-
+apiVersion: v1
+kind: Service
+metadata:
+  name: plant-app-service
+  namespace: dev-team-a
+spec:
+  selector:
+    app: plant-app
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
