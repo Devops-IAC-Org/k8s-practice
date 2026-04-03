@@ -4,7 +4,7 @@ metadata:
   name: argocd-plant-app-prod
   namespace: argocd
 spec:
-  project: argocd-Prod-plant-project
+  project: argocd-prod-plant-project
   source:
     repoURL: https://github.com/Devops-IAC-Org/k8s-practice
     targetRevision: v1.0.0
