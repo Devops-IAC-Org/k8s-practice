@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: prod-team-a
 resources:
 - ../../base
+- namespace.yaml
 patches:
 - path: patch.yaml
   target:
