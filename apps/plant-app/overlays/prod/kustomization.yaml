@@ -4,6 +4,7 @@ namespace: prod-team-a
 resources:
 - ../../base
 - namespace.yaml
+- ingress.yaml
 patches:
 - path: patch.yaml
   target:
