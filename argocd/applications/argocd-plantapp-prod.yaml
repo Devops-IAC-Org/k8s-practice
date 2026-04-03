@@ -1,18 +1,15 @@
-apiVersoin: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argocd-plant-app-prod
   namespace: argocd
 spec:
-  project: argocd-plant-project
+  project: argocd-Prod-plant-project
   source:
     repoURL: https://github.com/Devops-IAC-Org/k8s-practice
-    targetRevision: main
+    targetRevision: v1.0.0
     path: apps/plant-app/overlays/prod
   destination:
     server: https://kubernetes.default.svc
-    namespace: dev-team-a
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+    namespace: prod-team-a
+  syncPolicy: {}

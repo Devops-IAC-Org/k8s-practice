@@ -11,7 +11,7 @@ spec:
     path: apps/plant-app/overlays/test
   destination:
     server: https://kubernetes.default.svc
-    namespace: dev-team-a
+    namespace: test-team-a
   syncPolicy:
     automated:
       prune: true
