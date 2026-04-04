@@ -7,3 +7,13 @@ metadata:
     app.kubernetes.io/part-of: argocd
 data:
   url: https://argocd.prod.mycompany.com
+  server.insecure: "true"
+  oidc.config: |
+    name: AzureAD
+    issuer: https://login.microsoftonline.com/066fe1a7-14e1-4d6c-9f26-61b3da1d6f45/v2.0
+    clientID: 5c933094-9f82-4d3e-b333-201bddd8fe30
+    clientSecret: abv8Q~wDQ1QgmkORPQC95L47OCIuLA7PKXEMlaC0
+    requestedScopes: ["openid", "profile", "email"]
+    requestIdTokenclaims:
+      groups:
+        essential: true
